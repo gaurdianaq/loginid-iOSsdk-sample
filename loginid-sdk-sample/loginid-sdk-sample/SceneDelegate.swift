@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  loginid-sdk-sample
 //
-//  Created by Shamila Corless on 2020-06-09.
+//  Created by Evan Tatay-Hinds on 2020-06-09.
 //  Copyright © 2020 hatchways. All rights reserved.
 //
 
