@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import LoginSDK
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,6 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        let clientId = "xuaH-iewaahcSKnz666GMGzuGN3YwA3uBcZqFlX5YvsaqBnez_uWGlbMJ-4ja69wHd9w-8RNNg5lOXTKKH_4NA=="
+        let baseURL = "https://d1d896a0-ab4f-11ea-9a24-1b6b66ffeea6.sandbox.native-api.auth.asliri.id"
+        LoginAPI.client.configure(clientId: clientId, baseURL: baseURL)
         return true
     }
 

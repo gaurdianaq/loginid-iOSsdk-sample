@@ -10,8 +10,29 @@ import SwiftUI
 import LoginSDK
 
 struct ContentView: View {
+    @State var isLoggedIn = LoginAPI.client.isLoggedIn()
+    @State var hasAccount = LoginAPI.client.hasAccount()
+    @State var outputMsg = ""
     var body: some View {
-        Text("Hello, World!")
+        VStack {
+            if isLoggedIn {
+                AuthenticatedView(isLoggedIn: $isLoggedIn)
+            }
+            else {
+                UnauthenticatedView(isLoggedIn: $isLoggedIn, hasAccount: $hasAccount, outputMsg: $outputMsg)
+            }
+            Spacer()
+            if hasAccount {
+                Button(action: {
+                    LoginAPI.client.deleteAccount()
+                    self.hasAccount = LoginAPI.client.hasAccount()
+                }) {
+                    Text("Delete Account")
+                }
+            }
+            Spacer()
+            Text(self.outputMsg)
+        }
     }
 }
 
