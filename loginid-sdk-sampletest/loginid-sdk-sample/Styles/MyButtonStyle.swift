@@ -2,7 +2,7 @@
 //  MyButtonStyle.swift
 //  loginid-sdk-sample
 //
-//  Created by Shamila Corless on 2020-06-10.
+//  Created by Evan Tatay-Hinds on 2020-06-10.
 //  Copyright © 2020 hatchways. All rights reserved.
 //
 
