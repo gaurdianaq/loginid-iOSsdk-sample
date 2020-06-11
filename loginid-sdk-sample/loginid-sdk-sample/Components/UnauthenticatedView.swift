@@ -26,6 +26,8 @@ struct UnauthenticatedView: View {
         VStack {
             Spacer()
             if (self.hasAccount) {
+                Text("Please login!")
+                Spacer()
                 Button(action: {
                     LoginAPI.client.login(onComplete: { (response) in
                         if (response.success) {
@@ -41,6 +43,8 @@ struct UnauthenticatedView: View {
                 }
             }
             else {
+                Text("You need to register an account, please enter a username and click register!")
+                Spacer()
                 TextField("Username", text: $userName).accessibility(hint: Text("Username"))
                 Spacer()
                 Button(action: {

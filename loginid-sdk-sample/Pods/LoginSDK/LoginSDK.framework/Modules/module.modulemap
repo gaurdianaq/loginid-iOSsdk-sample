@@ -1,0 +1,11 @@
+framework module LoginSDK {
+  umbrella header "LoginSDK.h"
+
+  export *
+  module * { export * }
+}
+
+module LoginSDK.Swift {
+    header "LoginSDK-Swift.h"
+    requires objc
+}
