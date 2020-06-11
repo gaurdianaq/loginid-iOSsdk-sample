@@ -16,7 +16,6 @@
 		752DA807248FED99000C8875 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 752DA805248FED99000C8875 /* LaunchScreen.storyboard */; };
 		752DA812248FED99000C8875 /* loginid_sdk_sampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752DA811248FED99000C8875 /* loginid_sdk_sampleTests.swift */; };
 		752DA81D248FED99000C8875 /* loginid_sdk_sampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752DA81C248FED99000C8875 /* loginid_sdk_sampleUITests.swift */; };
-		754C3253249025EA00A6FA0E /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754C3252249025EA00A6FA0E /* SwiftUIView.swift */; };
 		756E6EA824915410005E9C87 /* MyButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756E6EA724915410005E9C87 /* MyButtonStyle.swift */; };
 /* End PBXBuildFile section */
 
@@ -53,7 +52,6 @@
 		752DA818248FED99000C8875 /* loginid-sdk-sampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "loginid-sdk-sampleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		752DA81C248FED99000C8875 /* loginid_sdk_sampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginid_sdk_sampleUITests.swift; sourceTree = "<group>"; };
 		752DA81E248FED99000C8875 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		754C3252249025EA00A6FA0E /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		756E6EA724915410005E9C87 /* MyButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyButtonStyle.swift; sourceTree = "<group>"; };
 		A045E745E54687B2CE57F32B /* Pods-loginid-sdk-sample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-loginid-sdk-sample.debug.xcconfig"; path = "Target Support Files/Pods-loginid-sdk-sample/Pods-loginid-sdk-sample.debug.xcconfig"; sourceTree = "<group>"; };
 		E82E6ABB0A52D88241E49FF0 /* Pods_loginid_sdk_sample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_loginid_sdk_sample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -126,7 +124,6 @@
 				752DA805248FED99000C8875 /* LaunchScreen.storyboard */,
 				752DA808248FED99000C8875 /* Info.plist */,
 				752DA802248FED99000C8875 /* Preview Content */,
-				754C3252249025EA00A6FA0E /* SwiftUIView.swift */,
 			);
 			path = "loginid-sdk-sample";
 			sourceTree = "<group>";
@@ -352,7 +349,6 @@
 				756E6EA824915410005E9C87 /* MyButtonStyle.swift in Sources */,
 				752DA7FB248FED92000C8875 /* AppDelegate.swift in Sources */,
 				752DA7FD248FED92000C8875 /* SceneDelegate.swift in Sources */,
-				754C3253249025EA00A6FA0E /* SwiftUIView.swift in Sources */,
 				752DA7FF248FED92000C8875 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
