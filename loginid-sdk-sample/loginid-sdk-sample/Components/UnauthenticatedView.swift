@@ -30,11 +30,11 @@ struct UnauthenticatedView: View {
                     LoginAPI.client.login(onComplete: { (response) in
                         if (response.success) {
                             self.outputMsg = "Successfully logged in!"
+                            self.isLoggedIn = LoginAPI.client.isLoggedIn()
                         }
                         else {
                             self.outputMsg = response.errorMessage
                         }
-                        self.isLoggedIn = LoginAPI.client.isLoggedIn()
                     })
                 }) {
                     Text("Login")
@@ -47,11 +47,12 @@ struct UnauthenticatedView: View {
                     LoginAPI.client.register(username: self.userName, onComplete: { (response) in
                         if (response.success) {
                             self.outputMsg = "Successfully registered!"
+                            self.isLoggedIn = LoginAPI.client.isLoggedIn()
+                            self.hasAccount = LoginAPI.client.hasAccount()
                         }
                         else {
                             self.outputMsg = response.errorMessage
                         }
-                        self.isLoggedIn = LoginAPI.client.isLoggedIn()
                     })
                 }) {
                     Text("Register")

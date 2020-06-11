@@ -16,7 +16,7 @@ struct ContentView: View {
     var body: some View {
         VStack {
             if isLoggedIn {
-                AuthenticatedView(isLoggedIn: $isLoggedIn)
+                AuthenticatedView(isLoggedIn: $isLoggedIn, outputMsg: $outputMsg)
             }
             else {
                 UnauthenticatedView(isLoggedIn: $isLoggedIn, hasAccount: $hasAccount, outputMsg: $outputMsg)
