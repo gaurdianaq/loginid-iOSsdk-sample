@@ -38,7 +38,7 @@
 
 /* Begin PBXFileReference section */
 		4592B5C2DFD64C9B900D0BF6 /* Pods-loginid-sdk-sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-loginid-sdk-sample.release.xcconfig"; path = "Target Support Files/Pods-loginid-sdk-sample/Pods-loginid-sdk-sample.release.xcconfig"; sourceTree = "<group>"; };
-		752DA7F7248FED92000C8875 /* loginid-sdk-sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "loginid-sdk-sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		752DA7F7248FED92000C8875 /* loginid-sdk-sampletest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "loginid-sdk-sampletest.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		752DA7FA248FED92000C8875 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		752DA7FC248FED92000C8875 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		752DA7FE248FED92000C8875 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -106,7 +106,7 @@
 		752DA7F8248FED92000C8875 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				752DA7F7248FED92000C8875 /* loginid-sdk-sample.app */,
+				752DA7F7248FED92000C8875 /* loginid-sdk-sampletest.app */,
 				752DA80D248FED99000C8875 /* loginid-sdk-sampleTests.xctest */,
 				752DA818248FED99000C8875 /* loginid-sdk-sampleUITests.xctest */,
 			);
@@ -190,7 +190,7 @@
 			);
 			name = "loginid-sdk-sample";
 			productName = "loginid-sdk-sample";
-			productReference = 752DA7F7248FED92000C8875 /* loginid-sdk-sample.app */;
+			productReference = 752DA7F7248FED92000C8875 /* loginid-sdk-sampletest.app */;
 			productType = "com.apple.product-type.application";
 		};
 		752DA80C248FED99000C8875 /* loginid-sdk-sampleTests */ = {
@@ -525,7 +525,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hatchways.loginid-sdk-sample";
-				PRODUCT_NAME = "loginid-sdk-sample";
+				PRODUCT_NAME = "loginid-sdk-sampletest";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -546,7 +546,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hatchways.loginid-sdk-sample";
-				PRODUCT_NAME = "loginid-sdk-sample";
+				PRODUCT_NAME = "loginid-sdk-sampletest";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
