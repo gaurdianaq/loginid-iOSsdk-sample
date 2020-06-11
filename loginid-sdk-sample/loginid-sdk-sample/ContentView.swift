@@ -21,46 +21,76 @@ struct ContentView: View {
             HStack {
                 VStack {
                     Button(action: {
-                        self.outputMsg = self.input
+                        LoginAPI.client.register(onComplete: { (response) in
+                            if (response.success) {
+                                self.outputMsg = "Successfully registered!"
+                            }
+                            else {
+                                self.outputMsg = response.errorMessage
+                            }
+                        })
                     }) {
                         Text("Register")
                     }.padding(.vertical, 10)
                     Button(action: {
+                        LoginAPI.client.login(onComplete: { (response) in
+                            if (response.success) {
+                                self.outputMsg = "Successfully logged in!"
+                            }
+                            else {
+                                self.outputMsg = response.errorMessage
+                            }
+                        })
                     }) {
                         Text("Login")
                     }.padding(.vertical, 10)
                     Button(action: {
+                        self.outputMsg = String(LoginAPI.client.hasAccount())
                     }) {
                         Text("Has Account?")
                     }.padding(.vertical, 10)
                     Button(action: {
+                        self.outputMsg = LoginAPI.client.getCurrentUsername() ?? "No username found!"
                     }) {
                         Text("Get Username")
                     }.padding(.vertical, 10)
                     Button(action: {
+                        LoginAPI.client.logout()
                     }) {
                         Text("Logout")
                     }.padding(.vertical, 10)
                 }
                 VStack {
                     Button(action: {
-                    
+                        LoginAPI.client.register(username: self.input, onComplete: { (response) in
+                            if (response.success) {
+                                self.outputMsg = "Successfully registered " + self.input + "!"
+                            }
+                            else {
+                                self.outputMsg = response.errorMessage
+                            }
+                        })
                     }) {
                         Text("Register with Username")
                     }.padding(.vertical, 10)
+                    /*
                     Button(action: {
+                        
                     }) {
                         Text("Login with Username")
-                    }.padding(.vertical, 10)
+                    }.padding(.vertical, 10)*/
                     Button(action: {
+                        self.outputMsg = String(LoginAPI.client.isLoggedIn())
                     }) {
                         Text("Is Logged In?")
                     }.padding(.vertical, 10)
                     Button(action: {
+                        self.outputMsg = LoginAPI.client.getCurrentAccessToken() ?? "No access token found!"
                     }) {
                         Text("Get JWT Token")
                     }.padding(.vertical, 10)
                     Button(action: {
+                        LoginAPI.client.deleteAccount()
                     }) {
                         Text("Delete Account")
                     }.padding(.vertical, 10)
